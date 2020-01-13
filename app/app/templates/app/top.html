@@ -1,0 +1,37 @@
+<table>
+  {% for key in context %}
+        <tr>
+          <td>
+            <h1>{{ key.name }}</h1>
+            <ul>
+                {% if key.id %}
+                <li>ID: {{ key.id }}</li>
+                {% endif %}
+                {% if key.address %}
+                <li>Address: {{ key.address }}</li>
+                {% endif %}
+                {% if key.city %}
+                <li>City: {{ key.city }}</li>
+                {% endif %}
+                {% if key.country %}
+                <li>Country: {{ key.country }}</li>
+                {% endif %}
+                {% if key.phone_number %}
+                <li>Phone Number: {{ key.phone_number }}</li>
+                {% endif %}
+                {% if key.email %}
+                <li>Email: {{ key.email }}</li>
+                {% endif %}
+                {% if key.description %}
+                <li>Description: {{ key.description }}</li>
+                {% endif %}
+                {% if key.rating_average %}
+                <li>Rating: {{ key.rating_average }}</li>
+                {% endif %}
+            </ul>
+          </td>
+        </tr>
+
+
+  {% endfor %}
+</table>
